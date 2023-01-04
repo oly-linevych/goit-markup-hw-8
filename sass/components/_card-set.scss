@@ -1,0 +1,68 @@
+.filter-example {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.info {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    list-style: none;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    overflow: hidden;
+    &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+&:nth-child(3n+3) {
+    margin-right: 0;
+
+}
+}
+
+
+
+
+
+.info .info-title {
+    margin-bottom: 4px;
+    margin-top: 0;
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.info .info-title {
+    color: var(--main-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.info .info-text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+

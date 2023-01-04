@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+@media screen and (min-width: 480px) {
+   max-width: 480px; 
+}
+@media screen and (min-width: 768px) {
+    max-width: 768px;
+}
+@media screen and (min-width: 1200px) {
+    max-width: 1200px;
+}
+
+}
+body {
+    color: var(--main-color);
+    font-family: var(--font-text);
+    margin: 0;
+}
+
+.hide {
+    display: none;
+    margin: 0;
+}
