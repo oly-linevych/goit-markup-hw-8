@@ -21,7 +21,7 @@ html {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -235,7 +235,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    max-width: 1600px;
+    max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
