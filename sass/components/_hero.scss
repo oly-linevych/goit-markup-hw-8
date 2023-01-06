@@ -1,6 +1,5 @@
 .hero {
-    height: 600px;
-    max-width: 1600px;
+   max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -8,14 +7,22 @@
     background-color: #2F303A;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 118px;
+    padding-bottom: 118px;
+   
+  @media screen and (min-width: 1200px) {
+      height: 600px;
+      max-width: 1600px;
     padding-top: 200px;
-    padding-bottom: 200px;
+     padding-bottom: 200px;
+
+  }
 }
 
 
 .hero__slogan {
     color: var(--white-color);
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     line-height: 1.36;
     text-align: center;
@@ -26,7 +33,19 @@
     margin-top: 0;
     margin-right: auto;
     margin-bottom: auto;
-    width: 696px;
+    width: 360px;
+    
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        width: 360px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        width: 696px;
+      
+        }
 
 }
 
