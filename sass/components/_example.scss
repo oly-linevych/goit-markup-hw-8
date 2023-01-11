@@ -1,3 +1,12 @@
+
+@media screen and(max-width: 1199px) {
+    .container-example {
+    display: none
+    
+}
+    
+}
+
 .image-example {
     position: relative;
 
@@ -19,7 +28,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--wite-color);
+    color: var(--white-color);
     background-color: rgba(47, 48, 58, 0.8);
     margin: 0;
     padding: 0;

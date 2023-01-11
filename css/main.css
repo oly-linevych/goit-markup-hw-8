@@ -6,6 +6,7 @@
   --text-color: #757575;
   --font-text: "Roboto";
   --font-logo: "Raleway";
+  --background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 html {
@@ -75,6 +76,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo__web {
@@ -98,9 +102,7 @@ body {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: relative;
   text-decoration: none;
   list-style: none;
@@ -171,9 +173,7 @@ body {
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   text-decoration: none;
   list-style: none;
   margin-left: auto;
@@ -220,17 +220,158 @@ body {
   fill: var(--brand-color);
 }
 
+.menu-open {
+  border: none;
+  background-color: #ffffff;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.mob-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #ffffff;
+}
+
+.mob-navigation {
+  margin-top: 0;
+  margin-bottom: 302px;
+}
+
+.mob-navigation__item {
+  text-decoration: none;
+  list-style: none;
+}
+
+.mob-navigation__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-contact {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 64px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mob-navigation__link {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  list-style: none;
+}
+
+.mob-link:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-mail {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto";
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-tel {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.mob-soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.mob-soc__item {
+  display: inline-block;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  list-style: none;
+}
+
+.mob-soc__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
 .hero {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/фон.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/фон.jpg");
+  margin-left: 0;
+  margin-right: 0;
+  background-image: var(--background), url("../../images/header-mobile.jpg");
   background-color: #2F303A;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
+  padding-left: 0;
+  padding-right: 0;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background), url("../../images/header-mobile2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: var(--background), url("../../images/header-tublet.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background), url("../../images/header-tablet2x.jpg");
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -238,6 +379,12 @@ body {
     max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: var(--background), url("../../images/фон.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--background), url("../../images/fon-2x.jpg");
   }
 }
 
@@ -397,6 +544,11 @@ body {
   text-align: left;
 }
 
+@media screen and (max-width: 1199px) {
+  .container-example {
+    display: none;
+  }
+}
 .image-example {
   position: relative;
 }
@@ -417,7 +569,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--wite-color);
+  color: var(--white-color);
   background-color: rgba(47, 48, 58, 0.8);
   margin: 0;
   padding: 0;
