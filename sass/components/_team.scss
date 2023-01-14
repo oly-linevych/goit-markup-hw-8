@@ -1,7 +1,12 @@
 /*---------------------------------------TEAM---------------*/
 .container-team {
-
     background: #F5F4FA;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+           padding-top: 94px;
+           padding-bottom: 94px;
+        }
 }
 
 .list-style {

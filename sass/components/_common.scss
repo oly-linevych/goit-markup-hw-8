@@ -28,6 +28,17 @@ max-width: 100%;
 }
 
 }
+
+.section {
+padding-top: 60px;
+padding-bottom: 60px;
+
+@media screen and (min-width: 1200px) {
+padding-top: 94px;
+padding-bottom: 94px;
+    }
+}
+
 body {
     color: var(--main-color);
     font-family: var(--font-text);
@@ -36,5 +47,4 @@ body {
 
 .hide {
     display: none;
-    margin: 0;
-}
+    margin: 0;}  

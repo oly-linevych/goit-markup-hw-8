@@ -10,10 +10,9 @@
 }
 
 .modal {
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: auto;
     background-color: #ffffff;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,18 +27,31 @@
     border-radius: 4px;
     border-color: (0, 0, 0, 0.2);
 
+
+@media screen and (min-width: 480px) {
+    max-width: 450px;
 }
 
+
+
+@media screen and (min-width: 1200px) {
+    max-width: 528px;
+}
+}
 .modal-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15px;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.03em;
     color: #212121;
     margin-top: 20px;
     margin-bottom: 12px;
-    text-align: center;
+    display: inline;
+    width: 100%
+   
+   
 }
 
 .modal-input {
