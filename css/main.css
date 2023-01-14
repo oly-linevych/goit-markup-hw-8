@@ -383,7 +383,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: var(--background), url("../images/header-mobile.jpg");
+  background-image: var(--background), url("./images/header-mobile.jpg");
   background-color: #2F303A;
   background-size: cover;
   background-repeat: no-repeat;
@@ -395,18 +395,18 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background), url("../images/header-mobile2x.jpg");
+    background-image: var(--background), url("./images/header-mobile2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: var(--background), url("../images/header-tublet.jpg");
+    background-image: var(--background), url("./images/header-tublet.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--background), url("../images/header-tablet2x.jpg");
+    background-image: var(--background), url("./images/header-tablet2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -415,7 +415,7 @@ body {
     max-width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: var(--background), url("../images/фон.jpg");
+    background-image: var(--background), url("./images/фон.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
