@@ -4,10 +4,12 @@
     flex-wrap: wrap;
    gap: 30px;
     margin-top: 0;
-    margin-bottom: 30px;
-    padding: 0;
+    margin-bottom: 0;
+padding-left: 0;
+    padding-bottom: 60px;
     text-decoration: none;
     list-style: none;
+
 }
 
 .preferens-point {
@@ -59,7 +61,7 @@
 
 .caption-text {
     margin-top: 30px;
-        margin-bottom: 10px;
+    
 }
 
 .caption {
@@ -71,6 +73,11 @@
     text-decoration: none;
     list-style: none;
     text-align: center;
+
+@media screen and (min-width: 768px) {
+    text-align: left;
+    
+}
 }
 
 .text {

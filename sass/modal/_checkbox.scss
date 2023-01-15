@@ -12,7 +12,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,4 +40,9 @@
 .check-link {
     color: #2196F3;
     margin-left: 5px;
+    font-size: 12px;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }

@@ -1,8 +1,3 @@
-// .footer__container {
-//     display: flex;
-//     align-items: baseline;
-//     justify-content: space-between;
-// }
 
 .footer__container {
     text-align: center;
@@ -17,16 +12,30 @@ align-items: baseline;
     
     @media screen and (min-width: 1200px) {
             justify-content: space-between;
+            text-align: left;
+     
         }
 }
 
 .footer__details {
     text-align: center;   
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-           margin-right: 165px;
-        }
-    }
+           margin-right: 165px;}
 
+    @media screen and (min-width: 1200px) {
+                text-align: left;
+                }
+        }
+    
+.logo__studio-footer {
+    color: var(--white-color);
+    font-family: var(--font-logo);
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 700;
+}
 
 .address {
     padding: 0;
@@ -34,6 +43,7 @@ align-items: baseline;
     margin-bottom: 0;
     text-decoration: none;
     list-style: none;
+ 
 }
 
 .address__point:not(:last-child) {
@@ -107,6 +117,7 @@ align-items: baseline;
     line-height: 1.14px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
 }
 
 .join {
@@ -117,16 +128,19 @@ text-align: center;
 @media screen and (min-width: 768px) {
       margin-top: 0;
     }
-
+@media screen and (min-width: 1200px) {
+    margin-top: 0;
+    text-align: left;
+}
 }
 
 
 .join__icon {
-    fill: #FFFFFF;
+    fill: var(--white-color);
 }
 
 .join__link {
-
+color: var(--white-color);
     background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 }
 

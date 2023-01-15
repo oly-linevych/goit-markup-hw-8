@@ -41,15 +41,15 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15px;
+    line-height: 1.15;
     text-align: center;
-    align-items: center;
+   
     letter-spacing: 0.03em;
     color: #212121;
     margin-top: 20px;
     margin-bottom: 12px;
-    display: inline;
-    width: 100%
+   
+  
    
    
 }
@@ -79,7 +79,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.6px;
+    line-height: 1.6;
     letter-spacing: 0.01em;
     color: #757575;
     margin-bottom: 10px;
@@ -161,10 +161,15 @@
 .agreement {
     font-family: var(--font-text);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
+   align-items: center;
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
 }

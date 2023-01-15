@@ -16,7 +16,12 @@
   .section-header__menu {
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 1199px) {
       justify-content: space-between;
+      
+        }
+      
 
   }
 
@@ -132,6 +137,12 @@
           display: block;
       
         }
+
+      @media screen and (min-width: 1200px) {
+          display: flex;
+          gap: 30px;
+          margin-left: auto;
+         }
   }
 
      .contact__item {
@@ -145,7 +156,10 @@
     
         }
 
+.contact__post-icon {
+  fill: var(--text-color)
 
+}
   
 
    .contact__adress-item {

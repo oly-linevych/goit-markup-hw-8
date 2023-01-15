@@ -21,32 +21,32 @@
     url("../images/header-mobile2x.jpg");
     }
    
-    @media screen and (min-width: 768px) {
-        max-width: 768px;
-        background-image: var(--background),
-                url("../images/header-tublet.jpg");
+     @media screen and (min-width: 768px) {
+       max-width: 768px;
+      background-image: var(--background),
+      url("../images/header-tublet.jpg");
 
-    @media (min-device-pixel-ratio: 2),
+     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: var(--background),
-                url("../images/header-tablet2x.jpg");
-        }
-    }
-    @media screen and (min-width: 1200px) {
+       (min-resolution: 2dppx) {
+         background-image: var(--background),
+              url("../images/header-tablet2x.jpg");
+       }
+     }
+     @media screen and (min-width: 1200px) {
       height: 600px;
-      max-width: 1200px;
-    padding-top: 200px;
-     padding-bottom: 200px;
+     max-width: 1600px;
+     padding-top: 200px;
+      padding-bottom: 200px;
     background-image: var(--background),
-            url("../images/фон.jpg");
+           url("../images/фон.jpg");
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: var(--background),
-                url("../images/fon-2x.jpg");
-        }
+               url("../images/fon-2x.jpg");
+         } 
     }
 }
 
@@ -64,7 +64,7 @@
     margin-top: 0;
     margin-right: auto;
     margin-bottom: auto;
-    width: 360px;
+    width: 100%;
     
 
     @media screen and (min-width: 768px) {
